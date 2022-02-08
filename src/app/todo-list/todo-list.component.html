@@ -1,0 +1,21 @@
+<h1 class="text-danger">Todo List</h1>
+
+<div class="todo-list">
+  <label for="list">Todo List </label>
+  <input type="text" value="" id="list" placeholder="Enter into list" #listItem
+    (keyup.enter)="addItemsToList(listItem)">
+  <input type="button" value="Add to list" class="btn btn-success add" (click)="addItemsToList(listItem)">
+</div>
+
+<div class="filter-list">
+  <label for="filter">Filter</label>
+  <input class="input" type="text" id="filter" placeholder="Filter" #filter (input)="filterArray(filter.value)" />
+</div>
+
+<div>
+  <p class="counter">{{ "There are " + listItems.length + " tasks." }}</p>
+  <p class="showed-items" *ngFor="let item of listItems; let i = index">
+    {{item}}
+    <input type="button" value="Clear" class="btn btn-danger remove" (click)="removeItem(i)">
+  </p>
+</div>

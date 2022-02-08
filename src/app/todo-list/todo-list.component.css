@@ -1,0 +1,40 @@
+h1 {
+  text-align: center;
+}
+
+.todo-list,
+.filter-list,
+.showed-items,
+.counter{
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+label{
+  margin-right: 5px;
+}
+
+.add {
+  padding: 5px ;
+  margin-left: 5px;
+}
+
+.filter-list{
+  margin-left: -4%;
+}
+
+input#filter {
+  margin-left: 25px;
+}
+
+.showed-items {
+  border: 1px solid black;
+  width: 30%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px;
+}
+
+
